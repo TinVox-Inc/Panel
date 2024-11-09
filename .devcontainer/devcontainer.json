@@ -1,6 +1,8 @@
 {
   "name": "Ubuntu 22.04",
-  "image": "ubuntu:22.04",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "settings": {
     "terminal.integrated.defaultProfile.linux": "/bin/bash"
   },
@@ -8,6 +10,5 @@
     "ms-vscode.cpptools",
     "ms-python.python"
   ],
-  "postCreateCommand": "apt-get update && apt-get install -y curl git",
   "remoteUser": "root"
 }
